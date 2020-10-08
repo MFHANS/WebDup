@@ -7,16 +7,18 @@
 
 ## CRUD 
 
-[] Create
-[] Read
-[] Update
-[] Delete
+- [] Create
+- [] Read
+- [] Update
+- [] Delete
 
 
 ## How to use?
 
-`` git clone https://github.com/MFARHAN/WebDup``
-``cd WebDup``
-``npm install``
-``npm run start``
-
+- `` git clone https://github.com/MFARHAN/WebDup``
+- ``cd WebDup``
+- ``npm install``
+### for development
+- ``npm run dev``
+### for production
+- ``npm run start``
