@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+.card{
+      margin:5% 0%;
+}
+ .card-body{
+   margin: 0% 0% 0% 3%;
+   padding: 6% 0%;
+}
+
+@media screen and (max-width: 800px) {
+  .col-4 {
+  
+  flex: 50%;
+  max-width: 50%;
+  }
+  }
