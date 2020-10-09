@@ -27,3 +27,5 @@ running server menggunakan nodemon pada saat development
 ### for production
 running server menggunakan node pada saat production
 - ``npm run start``
+
+![gif](https://miro.medium.com/max/500/1*WLNZLS4nb3XOW9maLQLD1g.gif)
