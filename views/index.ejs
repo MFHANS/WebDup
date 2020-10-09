@@ -1,11 +1,62 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+<%- include('header') -%>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+<div class="container-fluid">
+  <h2>Three Equal Columns</h2>
+  <p>You can also use numbers to control the column width. Just make sure that the sum always adds up to 12:</p>
+  <div class="row">
+    <div class="col-4">
+      <div class="card" style="width:px">
+        <img class="card-img-top" src="https://i.ibb.co/By4z9BG/logo-kecil.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card" style="width:px">
+        <img class="card-img-top" src="https://i.ibb.co/By4z9BG/logo-kecil.png" alt="Card image" >
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card" style="width:px">
+        <img class="card-img-top" src="https://i.ibb.co/By4z9BG/logo-kecil.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">John Doe</h4>
+          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4 bg-success">.col-4</div>
+    <div class="col-4 bg-warning">.col-4</div>
+    <div class="col-4 bg-success">.col-4</div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4 bg-success">.col-4</div>
+    <div class="col-4 bg-warning">.col-4</div>
+    <div class="col-4 bg-success">.col-4</div>
+  </div>
+</div>
+</body>
+</html>
+
   </body>
 </html>
