@@ -7,16 +7,25 @@
 
 ## CRUD 
 
-[] Create
-[] Read
-[] Update
-[] Delete
+- [x] Create
+- [x] Read
+- [] Update
+- [] Delete
 
 
 ## How to use?
 
-`` git clone https://github.com/MFARHAN/WebDup``
-``cd WebDup``
-``npm install``
-``npm run start``
+- `` git clone https://github.com/MFARHAN/WebDup``
+clonning folder pada local storage atau vps
+- ``cd WebDup``
+masuk direktori WebDup
+- ``npm install``
+untuk install package yang ada
+### for development
+running server menggunakan nodemon pada saat development
+- ``npm run dev``
+### for production
+running server menggunakan node pada saat production
+- ``npm run start``
 
+![gif](https://miro.medium.com/max/500/1*WLNZLS4nb3XOW9maLQLD1g.gif)
