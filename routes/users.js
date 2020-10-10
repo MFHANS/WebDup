@@ -30,7 +30,6 @@ router.get('/users/table', async function(req, res, next) {
     res.status(400).send({msg:"error lurr"})
   }
   
-  
 });
 
 /* GET one users listing. */
@@ -41,11 +40,25 @@ router.get('/users/:id', function(req, res, next) {
 /* POST  users listing. */
 router.post('/users', async function(req, res, next) {
   //res.send('respond POST user');
-  const datas = await dataUser(req.body)
+  //const datas = await dataUser(req.body)
+  const ada = await dataUser.findOne({email: req.body.email})
   try {
-    datas.save({password:bcrypt.hash(req.body.password,3)});
-    res.redirect('/users/api')
-    //console.log(req.body)
+    if (ada){
+      return res.status(400).send("user sudah ada")
+    }else{
+      datas = new dataUser({
+        nama : req.body.nama,
+        email: req.body.email,
+        password: req.body.password
+      })
+      const salt = await bcrypt.genSalt(10);
+      datas.password = await bcrypt.hash(datas.password, salt);
+      await datas.save()
+      res.send(datas);
+    }
+    //datas.save();
+    //res.redirect('/users/api')
+    console.log(req.body)
   } catch {
     res.status(400).send({msg:"gagal input"})
   }
