@@ -1,62 +1,40 @@
 <%- include('header') -%>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-
-<div class="container-fluid">
-  <h2>Three Equal Columns</h2>
-  <p>You can also use numbers to control the column width. Just make sure that the sum always adds up to 12:</p>
-  <div class="row">
-    <div class="col-4">
-      <div class="card" style="width:px">
-        <img class="card-img-top" src="https://i.ibb.co/By4z9BG/logo-kecil.png" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.ibb.co/K5sYmsx/carou2.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>   
     </div>
-
-    <div class="col-4">
-      <div class="card" style="width:px">
-        <img class="card-img-top" src="https://i.ibb.co/By4z9BG/logo-kecil.png" alt="Card image" >
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
+    <div class="carousel-item">
+      <img src="https://i.ibb.co/K5sYmsx/carou2.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Chicago</h3>
+        <p>Thank you, Chicago!</p>
+      </div>   
     </div>
-
-    <div class="col-4">
-      <div class="card" style="width:px">
-        <img class="card-img-top" src="https://i.ibb.co/By4z9BG/logo-kecil.png" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">John Doe</h4>
-          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
-        </div>
-      </div>
+    <div class="carousel-item">
+      <img src="https://i.ibb.co/K5sYmsx/carou2.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>We love the Big Apple!</p>
+      </div>   
     </div>
   </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
 </div>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-4 bg-success">.col-4</div>
-    <div class="col-4 bg-warning">.col-4</div>
-    <div class="col-4 bg-success">.col-4</div>
-  </div>
-</div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-4 bg-success">.col-4</div>
-    <div class="col-4 bg-warning">.col-4</div>
-    <div class="col-4 bg-success">.col-4</div>
-  </div>
-</div>
-</body>
-</html>
 
   </body>
 </html>
