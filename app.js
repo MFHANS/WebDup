@@ -11,6 +11,7 @@ var flash =require('connect-flash');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var inputRouter = require('./routes/input');
+var errorRouter = require('./routes/error');
 mongoose.connect(process.env.MONGO_URL,{ useUnifiedTopology: true ,useNewUrlParser: true} );
 var app = express();
 
@@ -28,7 +29,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use(usersRouter);
-app.use(inputRouter)
+app.use(inputRouter);
+app.use('/error', errorRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
