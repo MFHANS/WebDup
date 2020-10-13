@@ -47,7 +47,7 @@ router.post('/users', async function(req, res, next) {
       return res.status(400).send("user sudah ada")
     }else{
       datas = new dataUser({
-        nama : req.body.nama,
+        nama: req.body.nama,
         email: req.body.email,
         password: req.body.password
       })
@@ -62,6 +62,27 @@ router.post('/users', async function(req, res, next) {
   } catch {
     res.status(400).send({msg:"gagal input"})
   }
+});
+
+router.post('/users', async function(req, res, next) {
+  const ada = await dataUser.findOne({email:req.body.email});
+  try {
+    if(!ada){
+      res.redirect('/')
+    }else {
+      bcrypt.compare(req.body.password, dataUser.password, function (err,res){
+        if(res == true){
+          res.redirect('/')
+        }else {
+          res.send('incoreect password');
+          res.redirect('/error')
+        }
+      })
+    }
+  } catch (error) {
+    
+  }
+
 });
 
 /* PUT one users listing. */
