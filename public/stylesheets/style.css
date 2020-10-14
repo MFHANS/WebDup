@@ -22,6 +22,7 @@ a {
   height: 100%;
 }
 
+
 @media screen and (max-width: 800px) {
   .col-4 {
   
@@ -29,3 +30,4 @@ a {
   max-width: 50%;
         }
   }
+
